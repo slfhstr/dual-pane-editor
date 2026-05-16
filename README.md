@@ -63,7 +63,7 @@ without requiring a full IDE.
 
 # Screenshots
 
-(Add screenshots here)
+![example](example.png)
 
 ---
 
@@ -223,6 +223,7 @@ Cross-compilation is possible but not the standard workflow.
 * workspaces
 * PDF viewer
 * split preview/edit modes
+* specific close button (now just open a new file or close the app)
 
 ## Licence
 
