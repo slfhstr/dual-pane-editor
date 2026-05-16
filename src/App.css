@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #1f1f1f;
+}
+
+button {
+  font: inherit;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #1f1f1f;
+}
+
+.panes {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1px;
+  background: #444;
+}
+
+.pane {
+  min-width: 0;
+  min-height: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #1f1f1f;
+}
+
+.pane-header {
+  flex: 0 0 auto;
+  height: 42px;
+  padding: 6px 8px;
+  border-bottom: 1px solid #444;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #2b2b2b;
+  color: #f0f0f0;
+}
+
+.file-title {
+  flex: 1;
+  min-width: 0;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.controls {
+  display: flex;
+  gap: 6px;
+}
+
+.editor {
+  flex: 1 1 auto;
+  min-height: 0;
+  width: 100%;
+  resize: none;
+  border: 0;
+  outline: none;
+  padding: 10px 12px;
+  overflow: auto;
+  background: #242933;
+  color: #d8dee9;
+  font-family:
+    ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    Monaco,
+    Consolas,
+    monospace;
+  font-size: 12px;
+  line-height: 1.55;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  caret-color: #ffcc66;
+}
+
+.editor:focus {
+  background: #252b36;
+}
+
+.pane-footer {
+  flex: 0 0 auto;
+  height: 24px;
+  padding: 4px 8px;
+  border-top: 1px solid #444;
+  font-size: 12px;
+  color: #bbb;
+  background: #2b2b2b;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  white-space: nowrap;
+}
+
+.pane-footer span:first-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pane-footer span:last-child {
+  flex: 0 0 auto;
+}
+
+.panes > div {
+  min-width: 0;
+  min-height: 0;
+}
+
+.search-bar {
+  flex: 0 0 auto;
+  height: 36px;
+  padding: 4px 8px;
+  border-bottom: 1px solid #444;
+  background: #252525;
+  display: flex;
+  gap: 6px;
+}
+
+.search-bar input {
+  flex: 1;
+  min-width: 0;
+  background: #1d1d1d;
+  color: #eee;
+  border: 1px solid #555;
+  padding: 4px 6px;
+}
+
+.preview {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+  padding: 14px 18px;
+  background: #242933;
+  color: #d8dee9;
+  line-height: 1.6;
+}
+
+.markdown-preview h1,
+.markdown-preview h2,
+.markdown-preview h3 {
+  color: #ffffff;
+}
+
+.markdown-preview code {
+  background: #1b1f27;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.html-preview {
+  flex: 1 1 auto;
+  min-height: 0;
+  width: 100%;
+  border: 0;
+  background: white;
+}
