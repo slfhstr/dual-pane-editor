@@ -225,10 +225,10 @@ Cross-compilation is possible but not the standard workflow.
 * split preview/edit modes
 * specific close button (now just open a new file or close the app)
 
-## Licence
+## License
 
 - CC0 1.0 Universal
-- see LICENCE
+- see LICENSE
 
 
 
