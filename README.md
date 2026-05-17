@@ -227,10 +227,8 @@ Cross-compilation is possible but not the standard workflow.
 
 ## Licence
 
-- personal use only
-- PolyForm Noncommercial 1.0.0
+- CC0 1.0 Universal
 - see LICENCE
-- Commercial licensing available on request 
 
 
 
